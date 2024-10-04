@@ -1,4 +1,6 @@
 package com.bhavesh;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Date;
 
 import org.hibernate.Session;
@@ -11,7 +13,7 @@ import org.hibernate.cfg.Configuration;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws IOException
     {
         System.out.println( "Hey Bhavesh How are you doing? is everything ok buddy?" );
         SessionFactory factory = new Configuration().configure().buildSessionFactory();
@@ -31,6 +33,11 @@ public class App
         ad.setOpen(true);
         ad.setAddedDate(new Date());
         ad.setX(1234.432);
+        
+        FileInputStream fis = new FileInputStream("src/main/java/after_processing.png");
+        byte[] data = new byte[fis.available()];
+        fis.read(data);
+        ad.setImage(data);
         
         
         

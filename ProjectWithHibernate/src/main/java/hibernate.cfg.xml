@@ -28,7 +28,10 @@
         
         
         <mapping class="com.bhavesh.Student"/>
-        <mapping class"com.bhavesh.Address"/>
+        <mapping class="com.bhavesh.Address"/>
+        <mapping class="com.map.Question"/>
+        <mapping class="com.map.Answer"/>
+        
         
 
     </session-factory>

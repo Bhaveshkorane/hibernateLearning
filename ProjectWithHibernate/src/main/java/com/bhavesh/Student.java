@@ -11,6 +11,19 @@ public class Student {
 	private String name;
 	private String city;
 	
+	public Certificate getCerti() {
+		return certi;
+	}
+
+
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
+
+
+	private Certificate certi;
+	
 
 	public int getId() {
 		return id;
