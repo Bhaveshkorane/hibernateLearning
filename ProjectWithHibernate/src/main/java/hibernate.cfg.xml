@@ -31,6 +31,8 @@
         <mapping class="com.bhavesh.Address"/>
         <mapping class="com.map.Question"/>
         <mapping class="com.map.Answer"/>
+        <mapping class="com.map1.Employee"/>
+        <mapping class="com.map1.Project"/>
         
         
 
